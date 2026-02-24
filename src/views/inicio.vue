@@ -7,16 +7,16 @@
             <div class="caja-balance">
                 <h2>Balance</h2>
                 <div class="balance-grande" :class="{ 'negativo': balance < 0 }">
-                    {{ balance }} €
+                    {{ balance.toFixed(2) }} €
                 </div>
                 <div class="resumen">
                     <div class="item-resumen ingresos">
                         <span class="etiqueta">Ingresos totales</span>
-                        <span class="valor">{{ totalIngresos }} €</span>
+                        <span class="valor">{{ totalIngresos.toFixed(2) }} €</span>
                     </div>
                     <div class="item-resumen gastos">
                         <span class="etiqueta">Gastos totales</span>
-                        <span class="valor">{{ totalGastos }} €</span>
+                        <span class="valor">{{ totalGastos.toFixed(2) }} €</span>
                     </div>
                 </div>
             </div>

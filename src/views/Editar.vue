@@ -1,9 +1,9 @@
 <template>
     <div class="caixa">
-        <span v-if="balance < 0" style="color: red;">Balance actual: {{ balance }} €</span>
-        <span v-else>Balance actual: {{ balance }} €</span>
-        <span>Total ingresos: {{ totalIngresos }} €</span>
-        <span>Total gastos: {{ totalGastos }} €</span>
+        <span v-if="balance < 0" style="color: red;">Balance actual: {{ balance.toFixed(2) }} €</span>
+        <span v-else>Balance actual: {{ balance.toFixed(2) }} €</span>
+        <span>Total ingresos: {{ totalIngresos.toFixed(2) }} €</span>
+        <span>Total gastos: {{ totalGastos.toFixed(2) }} €</span>
     </div>
 
     <div class="movimientos">
